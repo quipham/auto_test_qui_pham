@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Sample suite" >
+
+    <listeners>
+        <listener class-name="hellopay.test.listener.CustomListener"/>
+    </listeners>
+
+    <test name="Sample test">
+        <classes>
+            <class name="runner.SampleCucumberRunner"/>
+        </classes>
+    </test>
+
+</suite>
