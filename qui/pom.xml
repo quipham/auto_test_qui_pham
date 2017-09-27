@@ -25,7 +25,7 @@
                 <version>2.20.1</version>
                 <configuration>
                     <suiteXmlFiles>
-                        <suiteXmlFile>xmlsuite.SampleSuite.xml</suiteXmlFile>
+                        <suiteXmlFile>${basedir}\src\test\resources\xmlsuite\SampleSuite.xml</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
             </plugin>
@@ -65,8 +65,9 @@
 
         <dependency>
             <groupId>info.cukes</groupId>
-            <artifactId>cucumber-jvm</artifactId>
+            <artifactId>cucumber-core</artifactId>
             <version>1.2.5</version>
+            <type>pom</type>
         </dependency>
 
         <dependency>
@@ -83,8 +84,9 @@
 
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
-            <artifactId>log4j</artifactId>
-            <version>2.8.2</version>
+            <artifactId>log4j-core</artifactId>
+            <version>2.9.1</version>
         </dependency>
     </dependencies>
+
 </project>
